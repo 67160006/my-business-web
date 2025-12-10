@@ -26,11 +26,74 @@
         <a id="contact"></a>
 
         <section>
-            <center>
-                <h2>ส่งข้อความถึงเรา</h2>
-            </center>
+
+            <h2>ส่งข้อความถึงเรา</h2>
+            <form action="/register" method="POST">
+                <fieldset>
+                    <legend>ข้อความติดต่อ</legend>
+
+                    <label for="fname">ชื่อจริง:</label>
+                    <input type="text" id="fname" name="firstname" required />
+
+                    <label for="lname">นามสกุล:</label>
+                    <input type="text" id="lname" name="lastname" required />
+
+                    <nav></nav>
+                    <label for="email">อีเมล:</label>
+                    <input type="text" id="email" name="mail" required />
+
+                    <nav></nav>
+
+                    <label for="message">ข้อความติดต่อ:</label>
+                    <nav></nav>
+                    <textarea id="message" name="message" rows="5" cols="40"></textarea>
+
+                    <nav></nav>
+
+                </fieldset>
+
+                <button type="submit">ส่งข้อความติดต่อ</button>
+                <button type="reset">ยกเลิก</button>
+            </form>
 
         </section>
+
+        <hr>
+
+        <section>
+            <center>
+                <h2>ที่ตั้งและแผนที่</h2>
+
+                <br>
+
+                <tr>
+
+                    <h3>📍 ที่อยู่บริษัท</h3>
+                    <p><strong>DOOGEM Headquarters</strong></p>
+                    <p>อาคารพลอยเพชร ชั้น 12, ห้อง 1205</p>
+                    <p>ถนนอัญมณี เขตบางรัก</p>
+                    <p>กรุงเทพมหานคร 10500</p>
+
+                    <br>
+
+                    <h3>📞 ข้อมูลติดต่ออื่นๆ</h3>
+                    <p>โทรศัพท์: 02-342-4622</p>
+                    <p>อีเมล: info@doogem.com</p>
+
+                    <br>
+
+                    <h3>🗺️ แผนที่ (จำลองขึ้นมา)<h3>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.7681057955193!2d100.44557566963347!3d13.774505999163758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299fb6ef6a7ef%3A0x3bea0c11b1654775!2zNDQvMiDguKPguLLguIrguJ7guKTguIHguKnguYwgMjIg4LmB4LiC4Lin4LiH4LiJ4Li04Lih4Lie4Lil4Li1IOC5gOC4guC4leC4leC4peC4tOC5iOC4h-C4iuC4seC4mSDguIHguKPguLjguIfguYDguJfguJ7guKHguKvguLLguJnguITguKMgMTAxNzA!5e0!3m2!1sth!2sth!4v1765357999264!5m2!1sth!2sth"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                </tr>
+
+            </center>
+        </section>
+
     </main>
 </body>
 
