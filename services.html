@@ -4,120 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOOGEM: บริการของเรา</title>
+    <title>Services - DOOGEM</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
     <header>
-        <center>
-            <h2>บริการของเรา (Our Core Services)</h2>
-
-        </center>
-
-        <center>
-            <p>
-                <a href="index.html">หน้าแรก</a> |
-                <a href="about.html">เกี่ยวกับเรา</a> |
-                <a href="services.html">บริการ</a> |
-                <a href="contact.html">ติดต่อ</a>
-            </p>
-        </center>
-    </header>
-
-    <hr>
-
-    <main>
-        <section>
-            <a id="services"></a>
-            <center>
-                <h2>บริการเด่น (3 บริการหลัก)</h2>
-            </center>
-
-            <table border="0" width="60%" align="center">
-                <tr>
-                    <td width="15%" align="center" valign="top">
-                        <img src="images/Ruby.png" alt="" width="100">
-                    </td>
-                    <td align="left" valign="top">
-                        <h3>💎 การประเมินมูลค่า</h3>
-                        <p>บริการตรวจสอบและประเมินราคาทรัพย์สิน ประเภทอัญมณีโดยผู้เชี่ยวชาญ ด้วยมาตรฐานสากล.</p>
-                    </td>
-                </tr>
-            </table>
-
-            <table border="0" width="60%" align="center">
-                <tr>
-                    <td width="15%" align="center" valign="top">
-                        <img src="images/gem.jpg" alt="" width="100">
-                    </td>
-                    <td align="left" valign="top">
-                        <h3>✨ การเจียระไนและการซ่อมแซม</h3>
-                        <p>คืนชีวิตชีวาให้อัญมณีเก่าของคุณด้วยบริการเจียระไนที่พิถีพิถันโดยช่างฝีมือผู้ชำนาญ.</p>
-                    </td>
-                </tr>
-            </table>
-
-            <table border="0" width="60%" align="center">
-                <tr>
-                    <td width="15%" align="center" valign="top">
-                        <img src="images/seller.jpg" alt="" width="100">
-                    </td>
-                    <td align="left" valign="top">
-                        <h3>🛒 การขายและการจัดหา</h3>
-                        <p>เราช่วยคุณค้นหาอัญมณีหายากตามความต้องการเฉพาะของคุณ หรือเสนอขายสินค้าคุณภาพสูง.</p>
-                    </td>
-                </tr>
-            </table>
+        <section id="Header">
+            <div class="header-content" style="text-align: center; padding: 20px;">
+                <figure>
+                    <img src="images/LOGO.png" alt="DOOGEM LOGO" style="width:150px; max-width: 30%;">
+                </figure>
+                <h1>DOOGEM</h1>
+            </div>
         </section>
 
-        <hr>
+        <nav class="nav-bar">
+            <div class="nav-links" style="text-align: center; padding: 10px; background-color: #f4f4f4;">
+                <a href="index.html" style="margin: 0 10px; text-decoration: none; color: #333;">หน้าแรก</a> |
+                <a href="about.html" style="margin: 0 10px; text-decoration: none; color: #333;">เกี่ยวกับเรา</a> |
+                <a href="services.html"
+                    style="margin: 0 10px; text-decoration: none; color: #333; font-weight: bold;">บริการ</a> |
+                <a href="contact.html" style="margin: 0 10px; text-decoration: none; color: #333;">ติดต่อ</a>
+            </div>
+        </nav>
+    </header>
 
-        <section>
-            <center>
+    <main class="container" style="max-width: 1000px; margin: 0 auto; padding: 40px 20px;">
+
+        <div class="page-header" style="text-align: center; margin-bottom: 30px;">
+            <h2>บริการของเรา (Our Core Services)</h2>
+            <hr style="width: 100px; border: 2px solid #d4af37; margin: 20px auto;">
+        </div>
+
+        <section id="services-list" style="margin-bottom: 50px;">
+            <div class="services-grid" style="display: flex; flex-direction: column; gap: 30px;">
+
+                <div class="service-item"
+                    style="display: flex; align-items: flex-start; gap: 20px; padding: 20px; background: #fff; border: 1px solid #eee; border-radius: 8px;">
+                    <div style="flex-shrink: 0;">
+                        <img src="images/Ruby.png" alt="การประเมินมูลค่า"
+                            style="width:120px; height: 120px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <div>
+                        <h3 style="color: #333; margin-top: 0;">💎 การประเมินมูลค่า</h3>
+                        <p style="line-height: 1.6; color: #666;">บริการตรวจสอบและประเมินราคาทรัพย์สิน
+                            ประเภทอัญมณีโดยผู้เชี่ยวชาญ ด้วยมาตรฐานสากล เพื่อให้คุณมั่นใจในมูลค่าที่แท้จริง</p>
+                    </div>
+                </div>
+
+                <div class="service-item"
+                    style="display: flex; align-items: flex-start; gap: 20px; padding: 20px; background: #fff; border: 1px solid #eee; border-radius: 8px;">
+                    <div style="flex-shrink: 0;">
+                        <img src="images/gem.jpg" alt="การเจียระไน"
+                            style="width:120px; height: 120px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <div>
+                        <h3 style="color: #333; margin-top: 0;">✨ การเจียระไนและการซ่อมแซม</h3>
+                        <p style="line-height: 1.6; color: #666;">
+                            คืนชีวิตชีวาให้อัญมณีเก่าของคุณด้วยบริการเจียระไนที่พิถีพิถันโดยช่างฝีมือผู้ชำนาญ
+                            การันตีความเงางามเหมือนใหม่</p>
+                    </div>
+                </div>
+
+                <div class="service-item"
+                    style="display: flex; align-items: flex-start; gap: 20px; padding: 20px; background: #fff; border: 1px solid #eee; border-radius: 8px;">
+                    <div style="flex-shrink: 0;">
+                        <img src="images/seller.jpg" alt="การขายและการจัดหา"
+                            style="width:120px; height: 120px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <div>
+                        <h3 style="color: #333; margin-top: 0;">🛒 การขายและการจัดหา</h3>
+                        <p style="line-height: 1.6; color: #666;">เราช่วยคุณค้นหาอัญมณีหายากตามความต้องการเฉพาะของคุณ
+                            หรือเสนอขายสินค้าคุณภาพสูงที่ผ่านการคัดสรรมาอย่างดี</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+
+        <section id="packages">
+            <div style="text-align: center; margin-bottom: 30px;">
                 <h2>📋 แพ็กเกจบริการและการเปรียบเทียบ</h2>
-            </center>
+            </div>
 
-            <table border="1" align="center">
-                <thead>
-                    <tr>
-                        <th width="20%">บริการ/คุณสมบัติ</th>
-                        <th width="15%">แพ็กเกจมาตรฐาน</th>
-                        <th width="15%">แพ็กเกจพรีเมียม</th>
-                        <th width="15%">แพ็กเกจองค์กร/ธุรกิจ</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>✅ การประเมินมูลค่า (ต่อชิ้น)</td>
-                        <td align="center">1 ชิ้น</td>
-                        <td align="center">สูงสุด 5 ชิ้น</td>
-                        <td align="center">ไม่จำกัด</td>
-                    </tr>
-                    <tr>
-                        <td>✅ ใบรับรองคุณภาพ</td>
-                        <td align="center">มี (พื้นฐาน)</td>
-                        <td align="center">มี (ละเอียด)</td>
-                        <td align="center">มี (ละเอียด+ดิจิทัล)</td>
-                    </tr>
-                    <tr>
-                        <td>✅ การให้คำปรึกษา</td>
-                        <td align="center">30 นาที</td>
-                        <td align="center">60 นาที</td>
-                        <td align="center">ไม่จำกัด</td>
-                    </tr>
-                    <tr>
-                        <td>**💰 ราคาเริ่มต้น**</td>
-                        <td align="center">**500 บาท**</td>
-                        <td align="center">**2,500 บาท**</td>
-                        <td align="center">**ติดต่อสอบถาม**</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div style="overflow-x: auto;">
+                <table
+                    style="width: 100%; border-collapse: collapse; margin: 0 auto; box-shadow: 0 0 10px rgba(0,0,0,0.05);">
+                    <thead style="background-color: #333; color: white;">
+                        <tr>
+                            <th style="padding: 15px; text-align: left;">บริการ/คุณสมบัติ</th>
+                            <th style="padding: 15px; text-align: center; background-color: #444;">แพ็กเกจมาตรฐาน</th>
+                            <th style="padding: 15px; text-align: center; background-color: #d4af37; color: white;">
+                                แพ็กเกจพรีเมียม (แนะนำ)</th>
+                            <th style="padding: 15px; text-align: center; background-color: #444;">แพ็กเกจองค์กร</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 12px; font-weight: bold;">✅ การประเมินมูลค่า (ต่อชิ้น)</td>
+                            <td style="padding: 12px; text-align: center;">1 ชิ้น</td>
+                            <td style="padding: 12px; text-align: center; background-color: #fff9e6;">สูงสุด 5 ชิ้น</td>
+                            <td style="padding: 12px; text-align: center;">ไม่จำกัด</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee; background-color: #f9f9f9;">
+                            <td style="padding: 12px; font-weight: bold;">✅ ใบรับรองคุณภาพ</td>
+                            <td style="padding: 12px; text-align: center;">มี (พื้นฐาน)</td>
+                            <td style="padding: 12px; text-align: center; background-color: #fff9e6;">มี (ละเอียด)</td>
+                            <td style="padding: 12px; text-align: center;">มี (ละเอียด+ดิจิทัล)</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 12px; font-weight: bold;">✅ การให้คำปรึกษา</td>
+                            <td style="padding: 12px; text-align: center;">30 นาที</td>
+                            <td style="padding: 12px; text-align: center; background-color: #fff9e6;">60 นาที</td>
+                            <td style="padding: 12px; text-align: center;">ไม่จำกัด</td>
+                        </tr>
+                        <tr style="font-weight: bold; background-color: #f4f4f4;">
+                            <td style="padding: 15px;">💰 ราคาเริ่มต้น</td>
+                            <td style="padding: 15px; text-align: center; color: #555;">500 บาท</td>
+                            <td style="padding: 15px; text-align: center; color: #d4af37; font-size: 1.1em;">2,500 บาท
+                            </td>
+                            <td style="padding: 15px; text-align: center; color: #555;">ติดต่อสอบถาม</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
     </main>
 
-    <hr>
+    <footer id="footer" style="background-color: #333; color: white; padding: 20px; margin-top: 40px;">
+        <div style="text-align: center;">
+            <p>© 2025 DOOGEM. สงวนลิขสิทธิ์ทั้งหมด.</p>
+            <br>
+            <p>
+                <a href="index.html" style="color: #ddd;">หน้าแรก</a> |
+                <a href="about.html" style="color: #ddd;">เกี่ยวกับเรา</a> |
+                <a href="services.html" style="color: #ddd;">บริการ</a> |
+                <a href="contact.html" style="color: #ddd;">ติดต่อ</a>
+            </p>
+        </div>
+    </footer>
 
 </body>
 
