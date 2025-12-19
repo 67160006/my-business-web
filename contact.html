@@ -1,100 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us - DOOGEM</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
     <header>
-        <center>
-            <h1>ติดต่อเรา (Contact Us)</h1>
-            <p>
-                <a href="index.html">หน้าแรก</a> |
-                <a href="about.html">เกี่ยวกับเรา</a> |
-                <a href="services.html">บริการ</a> |
-                <a href="contact.html">ติดต่อ</a>
-            </p>
-        </center>
-    </header>
-
-    <hr>
-
-    <main>
-        <a id="contact"></a>
-
-        <section>
-
-            <h2>ส่งข้อความถึงเรา</h2>
-            <form action="/register" method="POST">
-                <fieldset>
-                    <legend>ข้อความติดต่อ</legend>
-
-                    <label for="fname">ชื่อจริง:</label>
-                    <input type="text" id="fname" name="firstname" required />
-
-                    <label for="lname">นามสกุล:</label>
-                    <input type="text" id="lname" name="lastname" required />
-
-                    <nav></nav>
-                    <label for="email">อีเมล:</label>
-                    <input type="text" id="email" name="mail" required />
-
-                    <nav></nav>
-
-                    <label for="message">ข้อความติดต่อ:</label>
-                    <nav></nav>
-                    <textarea id="message" name="message" rows="5" cols="40"></textarea>
-
-                    <nav></nav>
-
-                </fieldset>
-
-                <button type="submit">ส่งข้อความติดต่อ</button>
-                <button type="reset">ยกเลิก</button>
-            </form>
-
+        <section id="Header">
+            <div class="header-content" style="text-align: center; padding: 20px;">
+                <figure>
+                    <img src="images/LOGO.png" alt="DOOGEM LOGO" style="width:150px; max-width: 30%;">
+                </figure>
+                <h1>DOOGEM</h1>
+            </div>
         </section>
 
-        <hr>
+        <nav class="nav-bar">
+            <div class="nav-links" style="text-align: center; padding: 10px; background-color: #f4f4f4;">
+                <a href="index.html" style="margin: 0 10px; text-decoration: none; color: #333;">หน้าแรก</a> |
+                <a href="about.html" style="margin: 0 10px; text-decoration: none; color: #333;">เกี่ยวกับเรา</a> |
+                <a href="services.html" style="margin: 0 10px; text-decoration: none; color: #333;">บริการ</a> |
+                <a href="contact.html"
+                    style="margin: 0 10px; text-decoration: none; color: #333; font-weight: bold;">ติดต่อ</a>
+            </div>
+        </nav>
+    </header>
 
-        <section>
-            <center>
-                <h2>ที่ตั้งและแผนที่</h2>
+    <main class="container" style="max-width: 1000px; margin: 0 auto; padding: 40px 20px;">
 
-                <br>
+        <div class="page-header" style="text-align: center; margin-bottom: 30px;">
+            <h1>ติดต่อเรา (Contact Us)</h1>
+            <hr style="width: 100px; border: 2px solid #d4af37; margin: 20px auto;">
+        </div>
 
-                <tr>
+        <div class="contact-layout" style="display: flex; flex-wrap: wrap; gap: 50px;">
+
+            <section style="flex: 1; min-width: 300px;">
+                <h2 style="color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px;">📩 ส่งข้อความถึงเรา</h2>
+
+                <form action="/register" method="POST" style="background: #f9f9f9; padding: 25px; border-radius: 8px;">
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="fname"
+                            style="display: block; margin-bottom: 5px; font-weight: bold;">ชื่อจริง:</label>
+                        <input type="text" id="fname" name="firstname" required
+                            style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="lname"
+                            style="display: block; margin-bottom: 5px; font-weight: bold;">นามสกุล:</label>
+                        <input type="text" id="lname" name="lastname" required
+                            style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">อีเมล:</label>
+                        <input type="email" id="email" name="mail" required
+                            style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label for="message"
+                            style="display: block; margin-bottom: 5px; font-weight: bold;">ข้อความติดต่อ:</label>
+                        <textarea id="message" name="message" rows="5"
+                            style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button type="submit" class="btn btn-primary"
+                            style="background-color: #d4af37; color: white; padding: 10px 25px; border: none; border-radius: 5px; cursor: pointer;">ส่งข้อความ</button>
+                        <button type="reset"
+                            style="background-color: #ddd; color: #333; padding: 10px 25px; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">ยกเลิก</button>
+                    </div>
+                </form>
+            </section>
+
+            <section style="flex: 1; min-width: 300px;">
+                <div
+                    style="background: #fff; padding: 20px; border: 1px solid #eee; border-radius: 8px; text-align: center;">
 
                     <h3>📍 ที่อยู่บริษัท</h3>
-                    <p><strong>DOOGEM Headquarters</strong></p>
-                    <p>อาคารพลอยเพชร ชั้น 12, ห้อง 1205</p>
-                    <p>ถนนอัญมณี เขตบางรัก</p>
-                    <p>กรุงเทพมหานคร 10500</p>
+                    <p style="margin-bottom: 5px;"><strong>DOOGEM Headquarters</strong></p>
+                    <p style="color: #666;">อาคารพลอยเพชร ชั้น 12, ห้อง 1205<br>ถนนอัญมณี เขตบางรัก<br>กรุงเทพมหานคร
+                        10500</p>
 
                     <br>
 
                     <h3>📞 ข้อมูลติดต่ออื่นๆ</h3>
-                    <p>โทรศัพท์: 02-342-4622</p>
-                    <p>อีเมล: info@doogem.com</p>
+                    <p style="margin-bottom: 5px;">โทรศัพท์: <a href="tel:023424622"
+                            style="color: #d4af37;">02-342-4622</a></p>
+                    <p>อีเมล: <a href="mailto:info@doogem.com" style="color: #d4af37;">info@doogem.com</a></p>
 
                     <br>
+                    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
 
-                    <h3>🗺️ แผนที่ (จำลองขึ้นมา)<h3>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.7681057955193!2d100.44557566963347!3d13.774505999163758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299fb6ef6a7ef%3A0x3bea0c11b1654775!2zNDQvMiDguKPguLLguIrguJ7guKTguIHguKnguYwgMjIg4LmB4LiC4Lin4LiH4LiJ4Li04Lih4Lie4Lil4Li1IOC5gOC4guC4leC4leC4peC4tOC5iOC4h-C4iuC4seC4mSDguIHguKPguLjguIfguYDguJfguJ7guKHguKvguLLguJnguITguKMgMTAxNzA!5e0!3m2!1sth!2sth!4v1765357999264!5m2!1sth!2sth"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h3>🗺️ แผนที่</h3>
+                    <div style="width: 100%; overflow: hidden; border-radius: 8px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.819716634732!2d100.51478231482996!3d13.729352990361955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e298db37229b1f%3A0x7c732c53f3609875!2sBang%20Rak%2C%20Bangkok!5e0!3m2!1sen!2sth!4v1689650000000!5m2!1sen!2sth"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
 
-
-                </tr>
-
-            </center>
-        </section>
+        </div>
 
     </main>
+
+    <footer id="footer" style="background-color: #333; color: white; padding: 20px; margin-top: 40px;">
+        <div style="text-align: center;">
+            <p>© 2025 DOOGEM. สงวนลิขสิทธิ์ทั้งหมด.</p>
+            <br>
+            <p>
+                <a href="index.html" style="color: #ddd;">หน้าแรก</a> |
+                <a href="about.html" style="color: #ddd;">เกี่ยวกับเรา</a> |
+                <a href="services.html" style="color: #ddd;">บริการ</a> |
+                <a href="contact.html" style="color: #ddd;">ติดต่อ</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
