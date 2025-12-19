@@ -5,80 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOOGEM: Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header>
-        <center>
-            <figure>
-                <img src="images/LOGO.png" alt="DOOGEMLOGO" style="width:15%">
-            </figure>
-            <h1>DOOGEM</h1>
-            <p>
-                <a href="#home">หน้าแรก</a> |
-                <a href="about.html">เกี่ยวกับเรา</a> |
-                <a href="services.html">บริการ</a> |
-                <a href="contact.html">ติดต่อ</a>
-            </p>
-        </center>
+        <section id="Header">
+            <div class="header-content" style="text-align: center; padding: 20px;">
+                <figure>
+                    <img src="images/LOGO.png" alt="DOOGEM LOGO" style="width:150px; max-width: 30%;">
+                </figure>
+                <h1>DOOGEM</h1>
+            </div>
+        </section>
+
+        <nav class="nav-bar">
+            <div class="nav-links" style="text-align: center; padding: 10px; background-color: #f4f4f4;">
+                <a href="index.html" style="margin: 0 10px; text-decoration: none; color: #333;">หน้าแรก</a> |
+                <a href="about.html" style="margin: 0 10px; text-decoration: none; color: #333;">เกี่ยวกับเรา</a> |
+                <a href="services.html" style="margin: 0 10px; text-decoration: none; color: #333;">บริการ</a> |
+                <a href="contact.html" style="margin: 0 10px; text-decoration: none; color: #333;">ติดต่อ</a>
+            </div>
+        </nav>
     </header>
 
-    <hr>
-
-    <main>
-
-        <a id="home"></a>
-        <center>
+    <div class="hero">
+        <article>
             <h2>ยินดีต้อนรับสู่ DOOGEM</h2>
             <p>ผู้เชี่ยวชาญด้านอัญมณีและบริการคุณภาพเยี่ยมสำหรับคุณ</p>
-            <p>และพร้อมจะให้คำแนะนำคุณในด้านอัญมณีและเครื่องประดับอย่างเชี่ยวชาญ</p>
-        </center>
-        <hr>
+            <p>พร้อมให้คำแนะนำด้านอัญมณีและเครื่องประดับอย่างเชี่ยวชาญ</p>
+            <a href="services.html" class="btn btn-primary"
+                style="display:inline-block; margin-top:15px; padding:10px 20px; background:#d4af37; color:white; text-decoration:none; border-radius:5px;">ดูบริการของเรา</a>
+        </article>
+    </div>
 
-        <center>
-            <h2>บริการเด่น (3 บริการหลัก)</h2>
+    <main class="container" style="padding: 40px 20px;">
 
-            <ul>
-                <li>
-                    💎 การประเมินมูลค่า : บริการตรวจสอบและประเมินราคาทรัพย์สิน ประเภทอัญมณีโดยผู้เชี่ยวชาญ.
+        <div id="featured-services">
+            <div class="page-header" style="text-align: center; margin-bottom: 30px;">
+                <h2>บริการเด่น (3 บริการหลัก)</h2>
+            </div>
+
+            <div class="services-grid"
+                style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+
+                <div class="card"
+                    style="border: 1px solid #ddd; padding: 20px; text-align: center; width: 300px; border-radius: 8px;">
                     <figure>
-                        <img src="images/Ruby.png" alt="DOOGEMLOGO" style="width:15%">
+                        <img src="images/Ruby.png" alt="การประเมินมูลค่าอัญมณี"
+                            style="width:100%; height: 200px; object-fit: cover; border-radius: 4px;">
                     </figure>
-                </li>
+                    <h3>💎 การประเมินมูลค่า</h3>
+                    <p>บริการตรวจสอบและประเมินราคาทรัพย์สิน ประเภทอัญมณีโดยผู้เชี่ยวชาญ</p>
+                </div>
 
-                <li>
-                    ✨ การเจียระไนและการซ่อมแซม : คืนชีวิตชีวาให้อัญมณีเก่าของคุณด้วยบริการเจียระไนที่พิถีพิถัน.
+                <div class="card"
+                    style="border: 1px solid #ddd; padding: 20px; text-align: center; width: 300px; border-radius: 8px;">
                     <figure>
-                        <img src="images/gem.jpg" alt="DOOGEMLOGO" style="width:15%">
+                        <img src="images/gem.jpg" alt="การเจียระไนและการซ่อมแซม"
+                            style="width:100%; height: 200px; object-fit: cover; border-radius: 4px;">
                     </figure>
-                </li>
+                    <h3>✨ การเจียระไน</h3>
+                    <p>คืนชีวิตชีวาให้อัญมณีเก่าของคุณด้วยบริการเจียระไนที่พิถีพิถัน</p>
+                </div>
 
-                <li>
-                    🛒 การขายและการจัดหา : เราช่วยคุณค้นหาอัญมณีหายากตามความต้องการ หรือเสนอขายสินค้าคุณภาพ.
+                <div class="card"
+                    style="border: 1px solid #ddd; padding: 20px; text-align: center; width: 300px; border-radius: 8px;">
                     <figure>
-                        <img src="images/seller.jpg" alt="DOOGEMLOGO" style="width:15%">
+                        <img src="images/seller.jpg" alt="การขายและการจัดหา"
+                            style="width:100%; height: 200px; object-fit: cover; border-radius: 4px;">
                     </figure>
-                </li>
-            </ul>
+                    <h3>🛒 การจัดหา</h3>
+                    <p>เราช่วยคุณค้นหาอัญมณีหายากตามความต้องการ หรือเสนอขายสินค้าคุณภาพ</p>
+                </div>
 
-        </center>
+            </div>
+        </div>
 
     </main>
 
-    <hr>
-
-    <footer>
-        <center>
+    <footer id="footer" style="background-color: #333; color: white; padding: 20px; margin-top: 40px;">
+        <div style="text-align: center;">
             <p>© 2025 DOOGEM. สงวนลิขสิทธิ์ทั้งหมด.</p>
+            <br>
             <p>
-                <a href="#home">หน้าแรก</a> |
-                <a href="about.html">เกี่ยวกับเรา</a> |
-                <a href="#services.html">บริการ</a> |
-                <a href="contact.html">ติดต่อ</a>
+                <a href="index.html" style="color: #ddd;">หน้าแรก</a> |
+                <a href="about.html" style="color: #ddd;">เกี่ยวกับเรา</a> |
+                <a href="services.html" style="color: #ddd;">บริการ</a> |
+                <a href="contact.html" style="color: #ddd;">ติดต่อ</a>
             </p>
-        </center>
+        </div>
     </footer>
+
 </body>
 
 </html>
