@@ -1,79 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us - DOOGEM</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header>
-        <a id="about"></a>
-        <center>
-            <h2>เกี่ยวกับเรา</h2>
-            <p>DOOGEM ก่อตั้งขึ้นในปี 2010
-                ด้วยความมุ่งมั่นที่จะนำเสนออัญมณีคุณภาพสูงและบริการที่เชื่อถือได้แก่ลูกค้าทุกท่าน</p>
-            <p>ตลอดระยะเวลาที่ผ่านมาเราได้สร้างชื่อเสียงและความเชี่ยวชาญในตลาดอัญมณีไทย</p>
+        <section id="Header">
+            <div class="header-content" style="text-align: center; padding: 20px;">
+                <figure>
+                    <img src="images/LOGO.png" alt="DOOGEM LOGO" style="width:150px; max-width: 30%;">
+                </figure>
+                <h1>DOOGEM</h1>
+            </div>
+        </section>
 
-
-            <p>
-                <a href="index.html">หน้าแรก</a> |
-                <a href="about.html">เกี่ยวกับเรา</a> |
-                <a href="services.html">บริการ</a> |
-                <a href="contact.html">ติดต่อ</a>
-            </p>
-        </center>
-
+        <nav class="nav-bar">
+            <div class="nav-links" style="text-align: center; padding: 10px; background-color: #f4f4f4;">
+                <a href="index.html" style="margin: 0 10px; text-decoration: none; color: #333;">หน้าแรก</a> |
+                <a href="about.html"
+                    style="margin: 0 10px; text-decoration: none; color: #333; font-weight: bold;">เกี่ยวกับเรา</a> |
+                <a href="services.html" style="margin: 0 10px; text-decoration: none; color: #333;">บริการ</a> |
+                <a href="contact.html" style="margin: 0 10px; text-decoration: none; color: #333;">ติดต่อ</a>
+            </div>
+        </nav>
     </header>
 
-    <hr>
+    <main class="container" style="max-width: 1000px; margin: 0 auto; padding: 40px 20px;">
 
-    <main>
-
-        <center>
-            <h2>🤝ทีมงานของเรา</h2>
-
-            <figure>
-                <img src="images/Employee1.jpg" alt="พนักงาน DOOGEM" width="300" border="2">
-                <figcaption>พลอยงาม (ผู้ก่อตั้ง) ผู้เชี่ยวชาญด้านอัญมณีศาสตร์</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/Employe 2.jpg" alt="DOOGEMLOGO" width="300" border="2">
-                <figcaption>มณีรัตน์ ผู้เชี่ยวชาญด้านการประเมินมูลค่าและบริหารจัดการ</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/Employe 3.jpg" alt="DOOGEMLOGO" width="300" border="2">
-                <figcaption>พลอยไพลิน นิลมณี ผู้จัดการฝ่ายจัดหาและการตลาด</figcaption>
-            </figure>
-
-        </center>
-
-        <hr>
-        <section>
-            <h3>✨ พันธกิจ (Mission)</h3>
-            <p>
-                พันธกิจของเราคือการเป็นผู้นำด้านการประเมินมูลค่าและการบริการอัญมณี
-                ด้วยความโปร่งใสและมาตรฐานวิชาชีพสูงสุด เพื่อสร้างความไว้วางใจและความพึงพอใจสูงสุดให้กับลูกค้า
-            </p>
-
-            <h3>🚀 วิสัยทัศน์ (Vision)</h3>
-            <p>
-                วิสัยทัศน์ของ DOOGEM คือการเป็นศูนย์กลางอัญมณีที่ได้รับการยอมรับในระดับสากล ในด้านความเชี่ยวชาญ
-                การเจียระไนที่ประณีต และการจัดหาสินค้าคุณภาพหายาก
+        <section id="about-intro" style="text-align: center; margin-bottom: 50px;">
+            <div class="page-header">
+                <h2>เกี่ยวกับเรา</h2>
+                <hr style="width: 100px; border: 2px solid #d4af37; margin: 20px auto;">
+            </div>
+            <p style="font-size: 1.1rem; line-height: 1.6;">
+                DOOGEM ก่อตั้งขึ้นในปี 2010
+                ด้วยความมุ่งมั่นที่จะนำเสนออัญมณีคุณภาพสูงและบริการที่เชื่อถือได้แก่ลูกค้าทุกท่าน<br>
+                ตลอดระยะเวลาที่ผ่านมาเราได้สร้างชื่อเสียงและความเชี่ยวชาญในตลาดอัญมณีไทย
             </p>
         </section>
 
-        <hr>
+        <section id="team" style="margin-bottom: 50px;">
+            <div class="page-header" style="text-align: center; margin-bottom: 30px;">
+                <h2>🤝 ทีมงานของเรา</h2>
+            </div>
 
-        <footer>
+            <div class="team-grid" style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px;">
 
-        </footer>
+                <div class="card team-card"
+                    style="border: 1px solid #eee; padding: 20px; text-align: center; width: 280px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">
+                    <figure style="margin: 0 0 15px 0;">
+                        <img src="images/Employee1.jpg" alt="คุณพลอยงาม"
+                            style="width:150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #d4af37;">
+                    </figure>
+                    <h3 style="margin: 10px 0 5px;">คุณพลอยงาม</h3>
+                    <p style="color: #666; font-size: 0.9rem;">(ผู้ก่อตั้ง)<br>ผู้เชี่ยวชาญด้านอัญมณีศาสตร์</p>
+                </div>
+
+                <div class="card team-card"
+                    style="border: 1px solid #eee; padding: 20px; text-align: center; width: 280px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">
+                    <figure style="margin: 0 0 15px 0;">
+                        <img src="images/Employe 2.jpg" alt="คุณมณีรัตน์"
+                            style="width:150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #d4af37;">
+                    </figure>
+                    <h3 style="margin: 10px 0 5px;">คุณมณีรัตน์</h3>
+                    <p style="color: #666; font-size: 0.9rem;">ผู้เชี่ยวชาญด้านการประเมินมูลค่า<br>และบริหารจัดการ</p>
+                </div>
+
+                <div class="card team-card"
+                    style="border: 1px solid #eee; padding: 20px; text-align: center; width: 280px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px;">
+                    <figure style="margin: 0 0 15px 0;">
+                        <img src="images/Employe 3.jpg" alt="คุณพลอยไพลิน นิลมณี"
+                            style="width:150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #d4af37;">
+                    </figure>
+                    <h3 style="margin: 10px 0 5px;">คุณพลอยไพลิน นิลมณี</h3>
+                    <p style="color: #666; font-size: 0.9rem;">ผู้จัดการฝ่ายจัดหาและการตลาด</p>
+                </div>
+
+            </div>
+        </section>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+
+        <section id="mission-vision" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+
+            <div
+                style="flex: 1; min-width: 300px; background-color: #fafafa; padding: 25px; border-radius: 10px; border-left: 5px solid #d4af37;">
+                <h3>✨ พันธกิจ (Mission)</h3>
+                <p style="line-height: 1.6;">
+                    พันธกิจของเราคือการเป็นผู้นำด้านการประเมินมูลค่าและการบริการอัญมณี
+                    ด้วยความโปร่งใสและมาตรฐานวิชาชีพสูงสุด เพื่อสร้างความไว้วางใจและความพึงพอใจสูงสุดให้กับลูกค้า
+                </p>
+            </div>
+
+            <div
+                style="flex: 1; min-width: 300px; background-color: #fafafa; padding: 25px; border-radius: 10px; border-left: 5px solid #2c3e50;">
+                <h3>🚀 วิสัยทัศน์ (Vision)</h3>
+                <p style="line-height: 1.6;">
+                    วิสัยทัศน์ของ DOOGEM คือการเป็นศูนย์กลางอัญมณีที่ได้รับการยอมรับในระดับสากล ในด้านความเชี่ยวชาญ
+                    การเจียระไนที่ประณีต และการจัดหาสินค้าคุณภาพหายาก
+                </p>
+            </div>
+
+        </section>
 
     </main>
+
+    <footer id="footer" style="background-color: #333; color: white; padding: 20px; margin-top: 40px;">
+        <div style="text-align: center;">
+            <p>© 2025 DOOGEM. สงวนลิขสิทธิ์ทั้งหมด.</p>
+            <br>
+            <p>
+                <a href="index.html" style="color: #ddd;">หน้าแรก</a> |
+                <a href="about.html" style="color: #ddd;">เกี่ยวกับเรา</a> |
+                <a href="services.html" style="color: #ddd;">บริการ</a> |
+                <a href="contact.html" style="color: #ddd;">ติดต่อ</a>
+            </p>
+        </div>
+    </footer>
 
 </body>
 
